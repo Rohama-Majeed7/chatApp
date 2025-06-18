@@ -6,11 +6,10 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "dev:socket": "node --loader ts-node/esm --no-warnings server.mts",
-
     "build": "next build",
     "build:socket": "next build && tsc --project tsconfig.server.json",
     "start": "next start",
-    "start:socket": "ts-node-esm --project tsconfig.server.json server.mts",
+    "start:socket": "node --loader ts-node/esm --no-warnings server.mts",
     "lint": "next lint"
   },
   "dependencies": {
